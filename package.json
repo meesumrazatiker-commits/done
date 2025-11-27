@@ -1,0 +1,24 @@
+{
+  "name": "tiktok-clone-pwa",
+  "version": "1.0.0",
+  "description": "A TikTok clone PWA with exact 1:1 design",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx http-server -p 8000 -C- --cors",
+    "build": "echo 'Build complete - static files ready for deployment'",
+    "deploy": "vercel --prod"
+  },
+  "keywords": [
+    "tiktok",
+    "clone",
+    "pwa",
+    "video",
+    "social",
+    "mobile"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
+}

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>TikTok Clone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#000000">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="TikTok Clone">
+    <meta name="description" content="A TikTok clone PWA with exact 1:1 design">
+    <meta name="keywords" content="tiktok, clone, video, social, pwa">
+    <meta property="og:title" content="TikTok Clone">
+    <meta property="og:description" content="A TikTok clone PWA with exact 1:1 design">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://picsum.photos/seed/tiktok/1200/630.jpg">
+    <meta property="og:url" content="">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="TikTok Clone">
+    <meta name="twitter:description" content="A TikTok clone PWA with exact 1:1 design">
+    <meta name="twitter:image" content="https://picsum.photos/seed/tiktok/1200/630.jpg">
+</head>
+<body>
+    <!-- Top Navigation -->
+    <header class="top-nav">
+        <nav class="nav-tabs">
+            <span>STEM</span>
+            <span>Explore</span>
+            <span>Following</span>
+            <span class="active">For You</span>
+        </nav>
+        <div class="nav-right">
+            <img src="icons/search.svg" alt="Search" class="search-icon">
+        </div>
+    </header>
+
+    <!-- Earnings Banner -->
+    <div class="earnings-banner">
+        <span class="earnings-label">Earned</span>
+        <span class="earnings-amount">$0.00</span>
+    </div>
+
+    <!-- Main Video Container -->
+    <main class="video-container">
+        <!-- Current Video -->
+        <div class="video-slide active" id="current-slide">
+            <video class="video-player" autoplay loop muted playsinline>
+                <source src="videos/ssstik.io_1764268307275.mp4" type="video/mp4">
+            </video>
+            <div class="video-overlay">
+                <div class="left-content">
+                    <div class="username">@funnygirl</div>
+                    <div class="description">
+                        <p>This is so funny lol 😂 #funny #memes #viral</p>
+                    </div>
+                    <div class="music-info">
+                        <img src="icons/music.svg" alt="Music" class="music-icon">
+                        <span>Contains: Original Sound</span>
+                    </div>
+                </div>
+                <div class="right-content">
+                    <div class="action-item">
+                        <div class="profile-pic">
+                            <img src="profile pictures/media.jpg" alt="Profile">
+                            <div class="add-icon">+</div>
+                        </div>
+                    </div>
+                    <div class="action-item">
+                        <img src="icons/heart.svg" alt="Like" class="action-icon">
+                        <span class="action-count">475.6K</span>
+                    </div>
+                    <div class="action-item">
+                        <img src="icons/comment.svg" alt="Comment" class="action-icon">
+                        <span class="action-count">8.7K</span>
+                    </div>
+                    <div class="action-item">
+                        <img src="icons/bookmark.svg" alt="Save" class="action-icon">
+                        <span class="action-count">3.0K</span>
+                    </div>
+                    <div class="action-item">
+                        <img src="icons/share.svg" alt="Share" class="action-icon">
+                        <span class="action-count">6.2K</span>
+                    </div>
+                    <div class="action-item">
+                        <div class="music-disc">
+                            <img src="profile pictures/media (1).jpg" alt="Music Album" class="music-profile">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Next Video (hidden, for swipe preview) -->
+        <div class="video-slide next" id="next-slide">
+            <video class="video-player" loop muted playsinline>
+                <source src="videos/ssstik.io_1764268566360.mp4" type="video/mp4">
+            </video>
+            <div class="video-overlay">
+                <div class="left-content">
+                    <div class="username">@username</div>
+                    <div class="description">
+                        <p>Loading...</p>
+                    </div>
+                    <div class="music-info">
+                        <img src="icons/music.svg" alt="Music" class="music-icon">
+                        <span>Contains: Original Sound</span>
+                    </div>
+                </div>
+                <div class="right-content">
+                    <div class="action-item">
+                        <div class="profile-pic">
+                            <img src="profile pictures/media (2).jpg" alt="Profile">
+                            <div class="add-icon">+</div>
+                        </div>
+                    </div>
+                    <div class="action-item">
+                        <img src="icons/heart.svg" alt="Like" class="action-icon">
+                        <span class="action-count">0</span>
+                    </div>
+                    <div class="action-item">
+                        <img src="icons/comment.svg" alt="Comment" class="action-icon">
+                        <span class="action-count">0</span>
+                    </div>
+                    <div class="action-item">
+                        <img src="icons/bookmark.svg" alt="Save" class="action-icon">
+                        <span class="action-count">0</span>
+                    </div>
+                    <div class="action-item">
+                        <img src="icons/share.svg" alt="Share" class="action-icon">
+                        <span class="action-count">0</span>
+                    </div>
+                    <div class="action-item">
+                        <div class="music-disc">
+                            <img src="profile pictures/media (3).jpg" alt="Music Album" class="music-profile">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Bottom Navigation -->
+    <nav class="bottom-nav">
+        <div class="nav-item active">
+            <img src="icons/home.svg" alt="Home" class="nav-icon">
+            <span>Home</span>
+        </div>
+        <div class="nav-item">
+            <img src="icons/profie.svg" alt="Friends" class="nav-icon">
+            <span>Friends</span>
+            <div class="notification-badge">1</div>
+        </div>
+        <div class="nav-item">
+            <img src="icons/plus.svg" alt="Create" class="nav-icon create-icon">
+        </div>
+        <div class="nav-item">
+            <img src="icons/inbox.svg" alt="Inbox" class="nav-icon">
+            <span>Inbox</span>
+            <div class="notification-badge">4</div>
+        </div>
+        <div class="nav-item">
+            <img src="icons/profie.svg" alt="Profile" class="nav-icon">
+            <span>Profile</span>
+        </div>
+    </nav>
+
+    <script src="script.js"></script>
+    <script src="swipe.js"></script>
+    
+    <!-- Service Worker Registration -->
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/sw.js')
+                    .then(registration => {
+                        console.log('ServiceWorker registration successful');
+                    })
+                    .catch(error => {
+                        console.log('ServiceWorker registration failed:', error);
+                    });
+            });
+        }
+    </script>
+</body>
+</html>
